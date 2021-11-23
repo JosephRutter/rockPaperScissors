@@ -22,7 +22,7 @@ public class Main {
         String[] computerOptions = {"rock", "paper", "scissors"};
 
         while (!(playerChoice.equals("no"))) {
-            computerChoice = computerOptions[(int) ((Math.random() * 3) + 1)];
+            computerChoice = computerOptions[(int) ((Math.random() * 3))];
             playerChoice = input.next();
             if (!((playerChoice.equals("rock")) || (playerChoice.equals("paper")) || (playerChoice.equals("scissors")))) {
                 System.out.println("please enter a valid choice");
